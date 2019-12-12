@@ -65,7 +65,7 @@ def mb_parse(base_url,headers):
 			title = div0.find_all('div', attrs={'class': 'bg coupon-row'})
 			number_title.append(len(title))
 			for div1 in title:
-				title2 = div1.find('tr', attrs={'class': 'sub-row'}).text2
+				title2 = div1.find('tr', attrs={'class': 'sub-row'}).text
 				hiscore2 = title2.split()
 				hiscore.append(hiscore2)	# все найденые события в список
 	else:
